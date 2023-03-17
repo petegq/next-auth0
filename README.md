@@ -1,5 +1,20 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Environment Variables
+
+You'll need a `.env` with the following to run locally:
+```shell
+AUTH0_NAME='[YOUR_APP_NAME]'
+AUTH0_SECRET='use [openssl rand -hex 32] to generate a 32 bytes value'
+AUTH0_BASE_URL='http://localhost:3000'
+AUTH0_ISSUER_BASE_URL='https://[YOUR_APP].eu.auth0.com'
+AUTH0_CLIENT_ID='[YOUR_CLIENT_ID]'
+AUTH0_CLIENT_SECRET='[YOUR_CLIENT_SECRET]'
+AUTH0_BASE_URL='http://localhost:3000'
+AUTH0_SCOPE='openid profile'
+```
+`AUTH0_NAME` / `AUTH0_ISSUER_BASE_URL` / `AUTH0_CLIENT_ID` and `AUTH0_CLIENT_SECRET` can be obtained from the Auth0 [dashboard](https://manage.auth0.com/dashboard)
+
 ## Getting Started
 
 First, run the development server:
